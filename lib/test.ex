@@ -14,8 +14,6 @@ defmodule Test do
 
   """
   def hello do
-    Algolia.search(System.get_env("INDEXNAME"), [query: "batman"])
+    Algolia.search(System.get_env("INDEXNAME"), "batman")
   end
 end
-
-Test.hello()
